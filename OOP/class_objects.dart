@@ -41,11 +41,11 @@ class Point {
   double? x = initialX;
 
   // ERROR, can't access `this` in non-`late` initializer:
-  double? y = this.x;
+  // double? y = this.x;
 
   // OK, can access `this` in `late` initializer:
   late double? z = this.x;
 
   // OK, `this.x` and `this.y` are parameter declarations, not expressions:
-  Point(this.x, this.y);
+  // Point(this.x, this.y);
 }
